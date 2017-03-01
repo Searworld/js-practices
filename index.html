@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务一：零基础JavaScript编码（一）</title>
+	<script type="text/javascript">
+	window.onload=function(){
+		var btn=document.getElementById("btn");
+		var ask=document.getElementById("text");
+		var que=document.getElementById("span");
+		
+		btn.onclick=function(){
+			que.innerHTML=ask.value;
+			alert("你的回答是："+que.innerHTML)
+		}
+
+	}
+</script>
+</head>
+<body>
+	<label>你还好？<input type="text" name="" id="text"></label>
+	<button id="btn">确认填写</button>
+	<div>你的回答是：<span id="span" ></span></div>
+</body>
+
+</html>
